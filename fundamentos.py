@@ -1,15 +1,15 @@
 # Variables
-name = "Fernanda"
-last_name = "Gonzalez"
+# name = "Fernanda"
+# last_name = "Gonzalez"
 
-# print(name)
-#operadores matematicos 
-num1 = 10
-num2 = 5
-suma = num1 + num2
-resta = num1 - num2
-multi = num1 * num2
-div = num1 / num2
+# # print(name)
+# #operadores matematicos 
+# num1 = 10
+# num2 = 5
+# suma = num1 + num2
+# resta = num1 - num2
+# multi = num1 * num2
+# div = num1 / num2
 
 # print(suma)
 # print(resta)
@@ -78,28 +78,82 @@ div = num1 / num2
 #     print("hoy es un dia laboral")
 
 
-player1 = "Messi"
-player2 = "Ronaldo" 
-sel_p1 = "tijera"
-sel_p2 = "piedra"
+# player1 = "Messi"
+# player2 = "Ronaldo" 
+# sel_p1 = "tijera"
+# sel_p2 = "piedra"
 
-print(f"Messi eligio {sel_p1}")
-print(f"Ronaldo eligio {sel_p2}")
+# print(f"Messi eligio {sel_p1}")
+# print(f"Ronaldo eligio {sel_p2}")
 
-if sel_p1 == "piedra" and sel_p2 == "tijera":
-    print("Messi gana")
-elif sel_p2 == "piedra" and sel_p1 == "tijera":
-    print("Ronaldo gana")
-elif sel_p1 == "papel" and sel_p2 == "piedra":
-    print("Messi gana")
-elif sel_p2 == "papel" and sel_p1 == "piedra":
-    print("Ronaldo gana")
-elif sel_p1 == "tijera" and sel_p2 == "papel":
-    print("Messi gana") 
-elif sel_p2 == "tijera" and sel_p1 == "papel":
-    print("Ronaldo gana")
-else:
-    print("Empate")
+# if sel_p1 == "piedra" and sel_p2 == "tijera":
+#     print("Messi gana")
+# elif sel_p2 == "piedra" and sel_p1 == "tijera":
+#     print("Ronaldo gana")
+# elif sel_p1 == "papel" and sel_p2 == "piedra":
+#     print("Messi gana")
+# elif sel_p2 == "papel" and sel_p1 == "piedra":
+#     print("Ronaldo gana")
+# elif sel_p1 == "tijera" and sel_p2 == "papel":
+#     print("Messi gana") 
+# elif sel_p2 == "tijera" and sel_p1 == "papel":
+#     print("Ronaldo gana")
+# else:
+#     print("Empate")
 
 #estructura de datos 
-#listas
+name_list = ["Fernanda", "primero", "segundo", "tercero"]
+# age_list = [20, 30, 40, 50]
+# weight_list = [50.5, 60.5, 70.5, 80.5]
+
+# name_list2 = [
+#                 "Juan", 
+#                 "Pedro", 
+#                 "Maria",
+#                 "Jose" ,
+#             ]
+# name_list.append("Ana")
+# print(len(name_list))
+# print(name_list)
+# print(name_list[0])
+# print(name_list[1])
+# print(name_list[2])
+# print(name_list[3])
+
+# #mostrar un slices de la lista 
+# print(name_list[1:3])
+
+# #el ultimo elemento de la lista
+# print(name_list[-1])
+
+#cambiar el valor del primer elemento de la lista
+# name_list[0] = "Fernanda Gonzalez"
+# print(name_list)
+
+# #tuplas
+# name_tuple = ("Fernanda", "primero", "segundo", "tercero")
+
+# print(name_tuple[0])
+
+name_diccionario = {
+    "nombre": "Fernanda",
+    "edad": 20,
+    "peso": 50.5,
+    "altura": 1.65,
+    "favorito comida": ["pizza" , "hamburguesa", "tacos"],
+    "adrees": {
+        "calle": "Av. Siempre Viva",
+        "numero": 123,
+        "colonia": "Springfield"
+    }
+}
+# print(name_diccionario["adrees"]["calle"])
+# print(name_diccionario["favorito comida"][2])
+
+#bucles
+# for name in name_list:
+#     if name == "primero":
+#         print(f"Hola {name}")
+
+for var in range(len(name_list)):
+    print(f"hola: {name_list[var]}")
