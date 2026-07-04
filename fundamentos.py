@@ -155,5 +155,41 @@ name_diccionario = {
 #     if name == "primero":
 #         print(f"Hola {name}")
 
-for var in range(len(name_list)):
-    print(f"hola: {name_list[var]}")
+# for var in range(len(name_list)):
+#     print(f"hola: {name_list[var]}")
+
+#funciones
+# def saludos():
+#     print("epalea:)")
+
+
+# saludos()
+def saludos2(name):
+    print(f"Hola {name}")
+
+# saludos2("Fernanda")
+
+def saludos3(name, last_name):
+    print(f"Hola {name} {last_name}")
+
+# saludos3("Fernanda", "Gonzalez")
+# saludos3("gonzalez", "Fernanda")
+
+# saludos3(last_name="Gonzalez", name="Fernanda")
+# saludos3(last_name="Gonzalez")
+
+def saludos4(name="Fernanda", last_name="Gonzalez"):
+    print(f"Hola {name} {last_name}")
+# saludos4("leo")
+# saludos4(last_name="Messi")
+
+def saludos5(name:str="Fernanda", last_name:str="Gonzalez"):
+    """
+    Esta funcion saluda a la persona con su nombre y apellido
+    name.str
+    last_name.str
+    return -> str
+    """
+    return print(f"Hola {name} {last_name}")
+
+saludos5("leo", "pessi")
